@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["image_file"])) {
             if ($stmt->execute()) {
                 echo "Image uploaded successfully!";
                 echo "<br><a href='index.php'>Back to Upload Form</a>";
-                echo "<br><a href='display.php'>To view uploaded Images</a>";
+                echo "<br><a href='process.php'>To view uploaded Images</a>";
             } else {
                 echo "Error uploading image: " . $stmt->error;
             }
